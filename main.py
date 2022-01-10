@@ -1,4 +1,5 @@
-from tkinter import *
+import tkinter as tk
+import tkinter
 from tkinter import ttk
 from tkcalendar import DateEntry
 from tkinter import messagebox
@@ -20,7 +21,7 @@ def connection():
     connectObj.commit()   
 
 connection()     
-window=Tk()
+window= tk.Tk()
 window.title("Mehran Ommani Shop Management Project")
 tabs = ttk.Notebook(window) 
 root= ttk.Frame(tabs)
@@ -129,19 +130,19 @@ def view():
         allrows+='\n'
         viewarea.insert(END,allrows)
 
-dateL=Label(root,text="Date",bg="DodgerBlue2",width=12,font=('arial',15,'bold'))
+dateL=tk.Label(root,text="Date",bg="DodgerBlue2",width=12,font=('arial',15,'bold'))
 dateL.grid(row=0,column=0,padx=7,pady=7)
 
 dateE=DateEntry(root,width=12,font=('arial',15,'bold'))
 dateE.grid(row=0,column=1,padx=7,pady=7)
 
-l=Label(root, text="Product",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
+l=tk.Label(root, text="Product",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
 l.grid(row=1,column=0,padx=7,pady=7)
 
-l=Label(root, text="Price",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
+l=tk.Label(root, text="Price",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
 l.grid(row=1,column=1,padx=7,pady=7)
 
-l=Label(root, text="Quantity",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
+l=tk.Label(root, text="Quantity",font=('arial',15,'bold'),bg="DodgerBlue2",width=12)
 l.grid(row=1,column=2,padx=7,pady=7)
 
 #----product 1----------------------------------------------------
@@ -173,13 +174,13 @@ p2price.set(200)
 p2quantity=IntVar()
 p2quantity.set(0)
 
-l=Label(root, text=p2name.get(),font=('arial',15,'bold'),width=12)
+l=tk.Label(root, text=p2name.get(),font=('arial',15,'bold'),width=12)
 l.grid(row=3,column=0,padx=7,pady=7)
 
-l=Label(root, text=p2price.get(),font=('arial',15,'bold'),width=12)
+l=tk.Label(root, text=p2price.get(),font=('arial',15,'bold'),width=12)
 l.grid(row=3,column=1,padx=7,pady=7)
 
-t=Entry(root,textvariable=p2quantity,font=('arial',15,'bold'),width=12)
+t=tk.Entry(root,textvariable=p2quantity,font=('arial',15,'bold'),width=12)
 t.grid(row=3,column=2,padx=7,pady=7)
 
 #----product 3----
