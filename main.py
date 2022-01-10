@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from tkcalendar import DateEntry
 from tkinter import messagebox
-import sqlite3  as db
+import sqlite3 as db
 
 def connection():
     connectObj = db.connect("shopManagement.db")
