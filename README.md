@@ -1,2 +1,4 @@
-# simple_shop_managment
-In this project I create Shop managment application
+# simple_shop_management
+In this project I create Shop management application.
+I have produced these features:
+
