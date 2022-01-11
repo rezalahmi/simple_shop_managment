@@ -3,7 +3,7 @@ from tkinter import ttk
 from tkcalendar import DateEntry
 
 
-class Window:
+class shopView:
     def __init__(self):
         self.MyWindow = tk.Tk()
         self.width = 700
@@ -94,5 +94,4 @@ class Window:
         self.MyWindow.mainloop()
 
 
-myshop = Window()
-myshop.showWindow()
+
